@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>DoorDash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="header">
+        <div class="main-header">
+          <div class="main-logo">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" 
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+             class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-1 ijOhfZ fetched-icon"><path d="M20.9506 9.06644C20.0784 7.42113 18.3736 6.41016 16.5301 6.41016H2.47575C2.21805 6.41016 2 6.62821 2 6.90573C2 7.02467 2.05947 7.14361 2.13876 7.24272L5.19147 10.3153C5.46899 10.5928 5.8258 10.7514 6.20243 10.7316H16.094C16.8076 10.7316 17.3825 11.2866 17.3825 12.0002C17.3825 12.7139 16.8274 13.2887 16.1138 13.2887H9.31461C9.05691 13.2887 8.83886 13.5068 8.83886 13.7843C8.83886 13.9033 8.89833 14.0222 8.97762 14.1213L12.0303 17.1939C12.3078 17.4714 12.6647 17.6102 13.0611 17.6102H16.1535C20.1577 17.6102 23.1905 13.3284 20.9506 9.06644Z" fill="#EB1700"></path></svg>
+          </div>
+        <div class="header-content">
+            <h1>Browse faster in the app</h1>
+            <p>$0 delivery fee on first order</p>
+            
+              <li>
+                <span class="rating"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-3 cEJCwd fetched-icon"><path d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193Z" fill="#EBB11E"></path></svg></span>
+                 <span class="ratingg"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-3 cEJCwd fetched-icon"><path d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193Z" fill="#EBB11E"></path></svg></span>
+                 <span class="ratingg"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-3 cEJCwd fetched-icon"><path d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193Z" fill="#EBB11E"></path></svg></span>
+                 <span class="ratingg"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-3 cEJCwd fetched-icon"><path d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193Z" fill="#EBB11E"></path></svg></span>
+                 <span class="ratingg"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-4 gBDNxG fetched-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193ZM7.99997 10.318C8.17082 10.318 8.34167 10.3617 8.49514 10.4492L10.6871 11.6986L10.1763 9.22779C10.1047 8.88181 10.2211 8.52376 10.4823 8.2859L12.3479 6.58727L9.84018 6.30961C9.48903 6.27073 9.18445 6.04944 9.03896 5.72749L7.99997 3.42834V10.318Z" fill="#EBB11E"></path></svg></span>
+                 <span class="amount">18.2M ratings</span>
+              </li>
+                
+          </div>
+      
+      <div class="open-box">
+        <span class="open-btn">Open</span>
+      </div>
+  </header>
+  <div class="bdy">
+    <div class="banner">
+     
+        <div class="first-banner">
+        <div class="first-banner-one">
+          <img src="img/svgexport-10.png">
+        </div>
+        <div class="first-banner-two">
+          <img src="img/svgexport-2.png" alt="logo">
+        </div>
+    </div>
+      <div class="in-up">
+        <div class="sign-inn">
+          <span class="sign-in">Sign In</span>
+        </div>
+        <div class="sign-upp">
+          <span class="sign-up">Sign Up</span>
+        </div>
+       </div>
+  <div class="second-banner">
+     <div class="second-banner-one">
+       <!-- <h1>$0 DELIVERY FEE ON FIRST ORDER</h1> -->
+        <h1 data-testid="HomePageHeroHeader" style="font-family: TTNormsProCond-Blk, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 900; " class="sc-aXZVg sc-8a1005b2-4 iWGNqg cWDXeQ">$0 DELIVERY FEE ON FIRST ORDER</h1>
+     </div>
+    <div class="second-banner-three">
+      <div class="second-banner-three-one">
+        <div class="second-banner-three-a">
+          <div class="second-banner-three-b">
+            <div class="second-banner-three-c">
+              <div class="second-banner-three-d">
+                <div class="second-banner-three-e">
+                  <div class="second-banner-three-f">
+                    <div class="second-banner-three-one">
+                      <img src="img/svgexport-6.svg" alt="search" class="search">
+                      <img src="img/svgexport-3.png" alt="locatn" class="locatn">
+                    </div>
+                  </div>
+                  <div class="second-banner-three-g">
+                    <input class="delivery-address" placeholder="Enter delivery address">
+                  </div>
+                  <div class="second-banner-three-h">
+                    <button class="arrow">
+                      <img src="img/svgexport-7.svg" class="b-arrow">
+                      <img src="img/svgexport-4.png" class="w-arrow">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="login-location">
+        <div class="login-btn">
+          <span class="login-btn-a">
+            <span class="login-btn-b">
+              <span class="location-btn-c">
+              <img src="img/svgexport-8.svg" alt="man" class="man">
+              </span>
+              <div class="login-class">
+             <input class="login" placeholder="Login">
+              </div>
+           </span>
+          </span>
+        </div>
+        <div class="login-btnn">
+         <span class="login-btn-a">
+          <span class="login-btn-b">
+           <span class="location-btn-c">
+              <img src="img/svgexport-9.svg" alt="location" class="location">
+           </span>
+           <input class="location" placeholder="Use current Location">
+         
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+   <div class="second-banner-two">
+    <div class="open-banner">
+      <div class="open-banner-btn">
+        <span class="open-app">Open App</span>
+      </div>
+    </div>
+  </div>
+   <div class="sign">
+         <img src="img/svgexport-8.svg" alt="man" class="man">
+            <div class="sign-class">
+              <span class="sign-classs">Sign In </span>
+              <span class="s-class">Sign in for saved address</span>
+              </div>
+  </div>
+  </div>
+    </div>
+
+  <div class="browser">
+    <div class="browser-one">
+      <div class="browser-two">
+        <div class="browser-three">
+          <div class="browser-three-a">
+            <img src="img/svgexport-1.svg" alt="logo-door">
+          </div>
+          <div class="browser-three-b">
+            <h2>Browse faster in the app</h2>
+            <h3>$0 delivery fee on first order</h3>
+            <ul>
+              <li>
+                
+                <span class="ratingss"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-3 cEJCwd fetched-icon"><path d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193Z" fill="#EBB11E"></path></svg></span>
+                 <span class="ratings"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-3 cEJCwd fetched-icon"><path d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193Z" fill="#EBB11E"></path></svg></span>
+                 <span class="ratings"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-3 cEJCwd fetched-icon"><path d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193Z" fill="#EBB11E"></path></svg></span>
+                 <span class="ratings"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-3 cEJCwd fetched-icon"><path d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193Z" fill="#EBB11E"></path></svg></span>
+                 <span class="ratings"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="StyledInlineSvg-sc-45a1y2-0 gfYsDE sc-97811b6f-4 gBDNxG fetched-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.91123 0.588193C8.74942 0.230121 8.3929 0 7.99996 0C7.60702 0 7.2505 0.230121 7.08869 0.588193L5.37313 4.38448L1.23251 4.84295C0.841962 4.8862 0.512933 5.15416 0.391509 5.52786C0.270085 5.90157 0.378772 6.31175 0.669316 6.5763L3.74967 9.381L2.90618 13.4606C2.82662 13.8454 2.97979 14.2412 3.29768 14.4721C3.61557 14.7031 4.03926 14.7265 4.38064 14.5319L7.99996 12.469L11.6193 14.5319C11.9607 14.7265 12.3843 14.7031 12.7022 14.4721C13.0201 14.2412 13.1733 13.8454 13.0937 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7298 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91123 0.588193ZM7.99997 10.318C8.17082 10.318 8.34167 10.3617 8.49514 10.4492L10.6871 11.6986L10.1763 9.22779C10.1047 8.88181 10.2211 8.52376 10.4823 8.2859L12.3479 6.58727L9.84018 6.30961C9.48903 6.27073 9.18445 6.04944 9.03896 5.72749L7.99997 3.42834V10.318Z" fill="#EBB11E"></path></svg></span>
+                 <span class="amounts">18.2M ratings</span>
+              </li>
+                </ul>
+          </div>
+        </div>
+        <button class="continue">
+          <span class="continue-one">
+            <span class="continue-two">
+              <span class="continue-three">
+                <span class="continue-four">Continue in app</span>
+              </span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container-one">
+      <div class="container-two">
+        <div class="container-three">
+          <div class="scooter">
+            <img src="img/ScootScoot.svg" alt="scooter">
+          </div>
+          <div class="container-content">
+            <div class="content-one">
+              <h1>Become a Dasher</h1>
+              <h2>As a delivery driver, make money and work on your schedule. Sign up in minutes.</h2>
+            </div>
+            <button class="scooter-btn">
+              <span class="btnn">Start earning</span>
+               <div class="arrow-gap"></div>
+              <img src="img/svgexport-6.png" alt="arrow-btn">
+            </button>
+          </div>
+        </div>
+
+        <div class="container">
+         <div class="container-three">
+        <div class="scooter">
+          <img src="img/Storefront.svg" alt="scooter">
+        </div>
+        <div class="container-content">
+          <div class="content-one">
+            <h1>Become a Merchant</h1>
+            <h2>Attract new customers and grow sales, starting with 0% commissions for up to 30 days.</h2>
+          </div>
+          <button class="scooter-btn">
+            <span class="btnn">Sign up for DoorDash</span>
+            <div class="arrow-gap"></div>
+            <img src="img/svgexport-6.png" alt="arrow-btn">
+          </button>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+       <div class="container-three">
+        <div class="scooter">
+          <img src="img/iphone.svg" alt="scooter">
+        </div>
+        <div class="container-content">
+          <div class="content-one">
+            <h1>Get the best DoorDash experience</h1>
+            <h2>Experience the best your neighborhood has to offer, all in one app.</h2>
+          </div>
+          <button class="scooter-btn">
+            <span class="btnn">Get the app</span>
+            <div class="arrow-gap"></div>
+            <img src="img/svgexport-6.png" alt="arrow-btn">
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="feature">
+    <div class="feature-one">
+      <!-- <div class="ex-one"> -->
+          <div class="feature-one-a">
+       <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/download_the_app_desktop.png" alt="Everything you crave, delivered." class="sc-52c6f367-3 iQAGbL">
+        </div>
+        <div class="feature-main">
+        <h2>Everything you crave, delivered.</h2>
+          <h3>Your favorite local restaurants</h3>
+          <span class="para">Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the chinese takeout spot you've been meaning to try.</span>
+           <div class="find-btn">
+            <div class="find-btnn">
+              <div class="find-btnn-one">
+                <div class="find-btnn-two">
+                  <div class="find-btnn-three">
+                    <span class="find-btnn-four">Find restaurants</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div> 
+    </div>
+  </div>
+    <div class="feature-two">
+       <div class="feature-two-one">
+        <div class="ex-one">
+        <div class="feature-img">
+          <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/dashpass_desktop.png" alt="DashPass is delivery for less " class="sc-52c6f367-3 iQAGbL">
+        </div>
+        <div class="main-feature">
+          <h1>DashPass is delivery for less</h1>
+          <h2>Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus, it's free for 30 days.</h2>
+          <div class="get-btn">
+            <button class="get-btnn">
+              <div class="get-btnn-one">
+                <div class="get-btnn-two">
+                  <div class="get-btnn-three">
+                  <span class="get-btnn-four">Get DashPass</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+          </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  <div class="feature">
+    <div class="feature-three">
+      <div class="feature-three-a">
+          <div class="ex-one">
+        <div class="feature-three-b">
+          <h2>Get grocery and convenience store essentials</h2>
+          <span class="grocery">Grocery delivery, exactly how you want it.</span>
+          <span class="grocery-para">Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</span>
+          <div class="grocery-box">
+            <div class="box-one">
+              <div class="box-two">
+              <span class="shopss-grocery">
+                <span class="shops-grocery">
+              <span class="shop-grocery">Shop Groceries</span>
+                </span>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="featuree">
+    <div class="feature-four">
+        <div class="feature-four-a">
+        <div class="feature-four-b">
+          <img src="img/convenience_desktop.avif" alt="convenience">
+        </div>
+      
+        <div class="four-content">
+          <h2>Convenience stores at your doorstep</h2>
+          <p>Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.</p>
+          <div class="grocery-box">
+            <div class="box-one">
+              <div class="box-two">
+              <span class="shopss-grocery">
+                <span class="shops-grocery">
+              <span class="shop-grocery">Shop Now</span>
+                </span>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+     </div>
+  <div class="main-containerr">
+    <h1>Helping you with to-dos and gifting</h1>
+  </div>
+<div class="containerr">
+  <!-- <div class="extentn">  -->
+    <div class="containerr-one">
+      <div class="containerr-a">
+        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/beauty_desktop.png" alt="Beauty essentials from top brands" class="sc-52c6f367-5 jSqbCn">
+      </div>
+      <div class="containerr-b">
+        <h2>Beauty essentials from top brands</h2>
+        <span class="con-beauty">Get all your beauty and self-care needs delivered at home or on-the-go</span>
+        <div class="con-one">
+          <div class="con-two">
+            <span class="con-three">
+              <span class="con-four">
+                <span class="con-five">
+                  <span class="con-six">Shop beauty</span>
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+  </div>
+    <div class="containerr-one">
+      <div class="containerr-a">
+        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/flowers_desktop.png" alt="Flowers for any occasion" class="sc-52c6f367-5 jSqbCn">
+      </div>
+      <div class="containerr-b">
+        <h2>Flowers for any occasion</h2>
+        <span class="con-beauty">Shop hand-picked and thoughtfully-arranged blooms from florists near you.</span>
+        <div class="con-one">
+          <div class="con-two">
+            <span class="con-three">
+              <span class="con-four">
+                <span class="con-five">
+                  <span class="con-six">Send Flowers</span>
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containerr-one">
+      <div class="containerr-a">
+      <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/alcohol_desktop.png" alt="Restock the minibar" class="sc-52c6f367-5 jSqbCn">
+      </div>
+      <div class="containerr-b">
+        <h2>Restock the minibar</h2>
+        <span class="con-beauty">Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer,<br>mixers, champagne and wine delivered fast.*</span>
+        <div class="con-one">
+          <div class="con-two">
+            <span class="con-three">
+              <span class="con-four">
+                <span class="con-five">
+                  <span class="con-six">Shop Alcohol</span>
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+        <span class="con-seven">*Must be 21+. Enjoy responsibly.</span>
+      </div>
+    </div>
+    <div class="containerr-one">
+      <div class="containerr-a">
+      <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/pet_supplies_desktop.png" alt="What your pets need, and want" class="sc-52c6f367-5 jSqbCn">
+      </div>
+      <div class="containerr-b">
+        <h2>What your pets need, and want</h2>
+        <span class="con-beauty">Finally something cat people and dog people agree on — pet supplies delivery. Shop pet food,<br>chew toys, and even costumes.</span>
+        <div class="con-one">
+          <div class="con-two">
+            <span class="con-three">
+              <span class="con-four">
+                <span class="con-five">
+                  <span class="con-six">Get Pet Supplies</span>
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<div class="wrapper">
+  <h1>Unlocking opportunity for Dashers and businesses</h1>
+  </div>
+  <div class="wrapper-one">
+    <div class="wrapper-two">
+      <div class="wrapper-three">
+        <img src="img/become_a_dasher_desktop.avif" alt="dasher">
+      </div>
+    <div class="main-wrapper">
+      <h2>Sign up to dash and get paid</h2>
+      <h3>Deliver with the #1 Food and Drink App in the U.S. As a delivery driver, you'll make money and work on your schedule. Sign up in minutes.</h3>
+      <div class="become-btn">
+        <div class="become-btnn">
+          <span class="become-btnnn">Become a Dasher</span>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+     <div class="wrapper-color">
+      <div class="wrapper-color-a">
+        <div class="ex-one">
+      <div class="wrapper-four">
+        <img src="img/work_with_doordash_desktop.avif" alt="work">
+      </div>
+    <div class="wrap-con">
+      <h2>Grow your business with DoorDash</h2>
+      <h3>Businesses large and small partner with DoorDash to reach new customers, increase order volume, and drive more sales.</h3>
+      <div class="become-btn">
+        <div class="become-btnn">
+          <span class="become-btnnn">Become a Partner</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="class">
+  <div class="class-one">
+    <h2>Get more from your neighborhood</h2>
+  </div>
+  <div class="class-two">
+    <div class="class-section">
+      <div class="cities">
+        <span class="top-cities">Top Cities</span>
+      </div>
+       <div class="cuisin">
+        <span class="top-cuisin">Top Cuisines</span>
+      </div>
+       <div class="cuisin">
+        <span class="top-cuisin">Top Chains</span>
+       </div>
+    </div>
+    <div class="class-list">
+      <div class="list">
+        <div class="list-a">
+          <span class="list-b">New York</span>
+        </div>
+        <div class="list-a">
+          <span class="list-b">Los Angeles</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Toronto</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Chicago</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Houston</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Brooklyn</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">San Diego</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Las Vegas</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">San Francisco</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Seattle</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Atlanta</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Queens</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Vancouver, BC</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Miami</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">San Antonio</span>
+        </div>
+          <!-- <div class="list-a">
+          <span class="list-b">Tallahassee</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Bend</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Kamloops</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Tulsa</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Austin</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Salt Lake City</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Jacksonville</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Colorado Springs</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Wilmington</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Birmington</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">New Orleans</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Lexington</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Orlando</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Victoria</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Victoria</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Columbia</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Scottasdale</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Augusta</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Christchurch</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Milwaukee</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Pittsburgh</span>
+        </div>
+           <div class="list-a">
+          <span class="list-b">Ft.Worth</span>
+        </div>
+          <div class="list-a">
+          <span class="list-b">Huntsville</span>
+        </div>
+          <div class="list-a">
+          <span class="list-b">Des Moines</span>
+        </div>
+          <div class="list-a">
+          <span class="list-b">Quebec City</span>
+          </div>
+            <div class="list-a">
+          <span class="list-b">All Cities</span>
+        </div> -->
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="see-btn">
+    <span class="see-btnn">See more</span>
+  <button class="see-more">
+    <img src="img/svgexport-7.png" alt="see">
+  </button>
+  </div>
+</div>
+<div class="footer">
+<div class="footer-one">
+  <div class="footer-two">
+    <div class="footer-three">
+    <div class="footer-four">
+        <h2>Popular Categories</h2>
+      </div>
+      <div class="Popular">
+      <ul>
+        <li>Alcohol Australia</li>
+        <li>Alcohol Delivery Australia</li>
+        <li>Back To School Delivery</li>
+        <li>Battle Of The Brands</li>
+        <li>Beauty Stores</li>
+        <li>Beauty Supply</li>
+        <li>Catering Near Me</li>
+        <li>Chips Ahoy Big Cookie</li>
+        <li>Convenience Stores Canada</li>
+      </ul>
+      <ul>
+        <div class="extention">
+        <li>Dashmart Near Me </li>
+        <li>Deck The Doorstep</li>
+        <li>Diageo Holiday</li>
+        <li>Drugstores Canada</li>
+        <li>Flower Delivery</li>
+        <li>Grocery Delivery Canada</li>
+        <li>Grocery Retail Convenience</li>
+        <li>Haleon Well Within Reach</li>
+        <li>Halloween</li>
+        </div>
+      </ul>
+      <ul>
+        <div class="extention">
+      <li>Holiday Hosting</li>
+      <li>Hsa Bank</li>
+      <li>Hsa Fsa Store</li>
+      <li>Large Group Orders</li>
+      <li>Local Eats Deserve Pepsi</li>
+      <li>Make It Date Night</li>
+      <li>Medicine Delivery</li>
+      <li>Mothers Day</li>
+      <li>Pepsi</li>
+        </div>
+      </ul>
+      <ul>
+        <div class="extention">
+        <li>Pet Store Near Me</li>
+        <li>Pickleball</li>
+        <li>Play For An Ultra</li>
+        <li>Procter Gamble</li>
+        <li>Retail Stores Near Me</li>
+        <li>Seasonal Holidays</li>
+        <li>Snap Ebt</li>
+        <li>Valentines Day</li>
+        <li>Winter Holidays</li>
+        </div>
+      </ul>
+      </div>
+  </div>
+    <div class="bottom-footer"> 
+        <!--imges-->
+        <div class="footer-img">
+        <img src="img/svgexport-8.png" alt="appstore">
+        <img src="img/svgexport-9.png" alt="google" class="google">
+      </div>
+      <div class="bottom-one">
+          <div class="bottom-two">
+            <h2>Get to Know Us</h2>
+            <span class="about">About Us</span>
+             <span class="about">Careers</span>
+              <span class="about">Investors</span>
+              <span class="about">Company Blog</span>
+            <span class="about">Engineering Blog</span>
+            <span class="about">Merchant Blog</span>
+             <span class="about">Gift Cards</span>
+             <span class="about">Promotions</span>
+             <span class="about">Dasher Central</span>
+            <span class="about">Linkedln</span>
+             <span class="about">Glassdoor</span>
+              <span class="about">Accessibility</span>
+               <span class="about">Newsroom</span>
+            </div>
+        <div class="bottom-two">
+          <h2>Let Us Help You</h2>
+          <span class="about">Account Details</span>
+          <span class="about">Order History</span>
+          <span class="about">Help</span>
+        </div>
+        <div class="bottom-two">
+          <h2>Doing Business</h2>
+          <span class="about">Become a Dasher</span>
+          <span class="about">DoorDash Merchant</span>
+          <span class="about">Get Dashers for Deliveries</span>
+          <span class="about">Get DoorDash for Business</span>
+        </div>
+      </div> 
+      <div class="bottom">
+        <div class="bottom-three">
+           <img src="img/svgexport-11.png" alt="facebook" class="face">
+          <img src="img/svgexport-12.png" alt="twitter" class="ti">
+          <img src="img/svgexport-13.png" alt="insta" class="ti">
+        
+           <div class="bottom-four">
+          <img src="img/svgexport-10.png">
+          <span class="a">Terms of Service</span> 
+          <span class="a"> Privacy</span>
+          <span class="a">Delivery Locations</span>
+          <span class="a">Do Not Sell or Share My Personal Information</span>
+          <span class="b">© 2025 DoorDash</span>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>

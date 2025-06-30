@@ -1874,6 +1874,7 @@ width: 297.5px; */
     padding-top: 32px;
     display: flex;
     flex-direction: column;
+    margin-left: -27px;
 }
 .bottom-two h2{
     margin-bottom: 8px;
@@ -1885,6 +1886,7 @@ width: 297.5px; */
     letter-spacing: -0.01px;
     text-decoration: none;
     display: block;
+    margin-left: 4px;
 }
 .about{
     cursor: pointer;
@@ -2536,18 +2538,21 @@ letter-spacing: -0.01px;
     font-size: 32px;
 }
 .Popular{
-    margin-top: 13px;
-    gap: 35px;
+    margin-top: 8px;
 }
 .footer-four h2{
     position: relative;
-    left: -7px;
+    left: 0px;
 }
 .popular-one{
     font-size: 13px;
 }
 .footer-img{
-    padding-top: 62px;
+    padding-top: 64.5px;
+}
+.footer-img img{
+    width: 160px;
+    height: 52px;
 }
 .bottom-one{
    display: flex;
@@ -2777,6 +2782,13 @@ letter-spacing: -0.01px;
 .cities{
     padding-bottom: 10px;
 }
+.footer-img{
+     flex: 1 1 0%;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
 }
 @media  screen and (min-width: 1184px) {
     .bdy{
@@ -2828,7 +2840,6 @@ letter-spacing: -0.01px;
     width: 154px;
     height: 154px;
     position: relative;
-    left: ;
 }
 .container-content{
     min-height: 160px;

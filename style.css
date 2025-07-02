@@ -263,6 +263,7 @@ color: #606060ff;
     text-align: center;
     color: rgb(255, 255, 255);
     line-height: 27px;
+    width: 350px;
     /* line-height: 30px;
     letter-spacing: -0.01px;
     position: relative;
@@ -692,7 +693,7 @@ color: #606060ff;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 40px 0;
+    margin: 20px 0;
     max-width: 100%;
     padding: 8px 8px;
 }
@@ -862,7 +863,7 @@ color: #606060ff;
     text-decoration: none;
     text-transform: none;
     display: block;
-   
+   width: 335px;
 }
 .find-btn{
     margin-top: 20px;
@@ -1596,7 +1597,6 @@ width: 297.5px; */
     width: 100%;
     flex-direction: row;
     padding:0px 25px;
-    position: relative;
 
 }
 .cities{
@@ -1863,10 +1863,10 @@ width: 297.5px; */
 
 }
 .bottom-one{
+     display: flex;
     flex-direction: column;
     text-align: center;
     flex: 1 1 0%;
-    display: flex;
     justify-content: space-between;
     gap: 12px;
 }
@@ -1988,7 +1988,75 @@ letter-spacing: -0.01px;
     display: none;
 }
 /*---*/
-
+@media screen and (min-width: 320px) {
+.main-header{
+    height: 80px;
+}
+.browser{
+    height: 182px;
+}
+.browser-two{
+    height: 162px;
+}    
+.second-banner{
+    width: 304px;
+    height: 180px;
+}
+.header-content p{
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.header-content li{
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.amount{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.first-banner-one img{
+    height: 18px;
+}
+.first-banner{
+    margin-top: -7px;
+}
+.second-banner-one h1{
+    margin-bottom:  10px;
+    line-height: 28px;
+}
+.second-banner-three-a{
+    width: 304px;
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+.browser-three-b h2{
+    white-space: nowrap;
+    overflow: hidden;
+}
+} 
+@media  screen and (min-width: 480px){
+    .class-one{
+        max-width: 100%;
+        padding: 24px 16px;
+    }
+    .cities{
+    border-bottom: 3px solid transparent;
+    box-shadow: 0 3px 0  #191919ff;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    }
+    .cuisin{
+     border-bottom: 2px solid transparent;
+    box-shadow: 0 2px 0 #f1f1f1ff;
+    padding-bottom: 12px;
+    }
+    
+}
 @media screen and (min-width: 768px) {
     /* .bdy{
         overflow: none;
@@ -2611,9 +2679,17 @@ letter-spacing: -0.01px;
     }
     .second-banner-one h1{
         font-weight: 900px;
-        max-width: 750px;
+        max-width: 100%;
         font-size: 40px;
         line-height: 40px;
+        width: 696.39px;
+        height: 40px;
+        align-items: center;
+    }
+    .second-banner-three-d{
+        position: relative;
+        left: 16px;
+        bottom: -5px;
     }
     .sign{
         width: 203.5px;
@@ -2635,7 +2711,7 @@ letter-spacing: -0.01px;
         padding-left: 5.5px;
     }
     .container-one{
-        padding-top: 13px;
+        padding-top: 33px;
     }
     .feature-main{
         width: 400px;
@@ -2654,9 +2730,13 @@ letter-spacing: -0.01px;
     }
     .para{
         font-size: 16px;
+        width: 100%;
     }
     .find-btn{
         margin-top: 21px;
+    }
+    .feature{
+        margin-top: 40px;
     }
     .feature-img img, .wrapper-four img{
         width: 524px;
@@ -2673,10 +2753,13 @@ letter-spacing: -0.01px;
     }
     .feature-three{
         width: 1024px;
-        top: -68px;
+        top: -108px;
     }
     .feature-three-b{
         margin-top: 146px;
+    }
+    .featuree{
+        margin-top: -40px;
     }
     .feature-four-b img{
         width: 546.25px;
@@ -2731,15 +2814,16 @@ letter-spacing: -0.01px;
         height: 234px;
         z-index: 1;
         position: relative;
-        bottom: -127px ;
+        bottom: -147px ;
         left: -6px;
     }
     .flowers,.pets{
         position: absolute;
-        left: 63px;
+        left: 56px;
     }
     .flowers .con-beauty, .pets .con-beauty{
-        width: 386px;
+        width: 100%;
+        margin-left: -21px;
     }
     .flowers h2{
         width: 424.8px;
@@ -2756,7 +2840,7 @@ letter-spacing: -0.01px;
         width: 400px;
         height: 259px;
         left: -584px;
-        top: -44px;
+        top: -54px;
     }
     .main-wrapper h2{
         height: 100px;
@@ -2773,21 +2857,53 @@ letter-spacing: -0.01px;
     width: 1024px;
     height: 448px;
 }
+.class-section{
+    margin-top: -7px
+}
+.top-cities{
+    margin-bottom: -20px;
+}
+.top-cuisin{
+    margin-bottom: -20px;
+}
+.class-list{
+    margin-top: 3px;
+}
 .class-one h2{
-    font-size: 18px;
-    line-height: 22px;
-    padding-left: 353px;
-    padding-top: 24px;
+    font-size: 32px;
+    line-height: 40px;
+    padding-left: 214px;
+    padding-top: 26px;
 }
 .cities{
     padding-bottom: 10px;
 }
+.footer-one{
+    height: 865px;
+}
+.bottom-footer{
+    display: flex;
+}
 .footer-img{
      flex: 1 1 0%;
     display: flex;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
-    overflow: hidden;
+    padding-top: 32px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 100px;
+}
+.bottom-one{
+    flex: 1 1 0%;
+    justify-content: space-between;
+    gap: 92px;
+}
+.bottom-two{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 113.06px;
+    height: 426px;
 }
 }
 @media  screen and (min-width: 1184px) {
@@ -2934,24 +3050,6 @@ left: -60px;
     left: -200px;
 }
 }
-@media  screen and (min-width: 480px){
-    .class-one{
-        max-width: 100%;
-        padding: 24px 16px;
-    }
-    .cities{
-    border-bottom: 3px solid transparent;
-    box-shadow: 0 3px 0  #191919ff;
-    padding-bottom: 12px;
-    box-sizing: border-box;
-    }
-    .cuisin{
-     border-bottom: 2px solid transparent;
-    box-shadow: 0 2px 0 #f1f1f1ff;
-    padding-bottom: 12px;
-    }
-    
-}
 @media screen and (min-width: 2560px){
     .feature{
         width: 2560px;
@@ -3032,12 +3130,10 @@ left: -60px;
      .main-wrapper{
         left: -1200px;
      }
+    }   
+@media screen and (min-width: 375px){
+    .second-banner-three-b{
+        width: 336px;
+        margin-left: -16px;
     }
-@media screen and (min-width: 320px) {
-.main-header{
-    height: 80px;
 }
-.browser-two{
-    height: 162px;
-}    
-}    

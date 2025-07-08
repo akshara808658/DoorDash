@@ -326,7 +326,7 @@ color: #606060ff;
 .second-banner-three-c{
     max-width: 100%;
     display: block;
-    margin-left: -1px;
+    margin-left: 0px;
 }
 .second-banner-three-d{
     display: flex;
@@ -2951,13 +2951,13 @@ letter-spacing: -0.01px;
         padding-top: 13px;
     }
     .feature-main{
-        /* width: 400px;
-        height: 290px; */
-        /* top: -88px; */
-        margin-left: -200px;
+
+        margin-left: -230px;
+        top: -123px;
     }
     .feature-main h2{
         font-size: 40px;
+     
     }
     .feature-one-a .img-two, .wrapper-three .img-ten{
         max-width: 100%;
@@ -2975,7 +2975,7 @@ letter-spacing: -0.01px;
     }
     .para{
         font-size: 16px;
-        width: 100%;
+        width: 400px;
     }
     .find-btn{
         margin-top: 20px;
@@ -3033,7 +3033,10 @@ letter-spacing: -0.01px;
         display: none;
     }
     .ex-one{
-        margin-top: 0px;
+        margin-top: -1px;
+    }
+    .wrapper-two{
+        width: auto;
     }
     .four-content, .main-wrapper{
      max-width: 493.25px;
@@ -3223,37 +3226,21 @@ letter-spacing: -0.01px;
     margin-top: -148px;
 }
 }
-@media  screen and (min-width: 1440px) {
-    .bdy{
-        overflow: hidden;
-        position:relative ;
-        z-index: 0;
-    }  
-    .banner{
-        background-position: center center;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    .container{
-        /* width: 1104px;
-        height: 636px;
-        margin: 0px auto; */
+@media  screen and (min-width:1184px) {
+        .container{
         max-width: 1184px;
 }
+.feature-one{
+    margin-left: -123px;
+}
 .container-one{
-    /* margin: 156px 0; */
     margin: 96px 0;
     flex-direction: row;
-    /* width: 1104px;
-    height: 444px;
-    padding: 12px 16px; */
 }
 .container-two{
     flex-direction: row;
 }
 .container-three, .c-four,.c-five{
-    /* width: 360px;
-    height: 420px; */
     margin: 17px;
     flex-direction: column;
     margin-left:-54px;
@@ -3270,6 +3257,10 @@ letter-spacing: -0.01px;
 position: relative;
 left: 28px;
 }
+.feature-one-a.img-two{
+    width: 663.47px;
+}
+
 .scooter{
     display: flex;
     justify-content: center;
@@ -3311,15 +3302,16 @@ left: 28px;
 }
 .feature-one-a .img-two{
     display: flex;
-    width: 695.02px;
+    width: 684px;
     height: 500px;
     object-fit: cover;
-    top: -4px;
-    left: 562px;
+    top: -149px;
+    left: 583px;
 }
 .feature-main{
-  top: -111px;
-  left: 122px;
+    top: -146px;
+    /* margin-left: -278px; */
+    margin-left: -267px;
 }
 .feature-two{
     width: 100%;
@@ -3330,18 +3322,25 @@ left: 28px;
     top: -40px;
 }
 .feature-img .img-four{
-    width: 724px;
+    /* width: 724px; */
+      width: 684px;
 }
 .feature-three{
-    width: 1440px;
+    /* width: 1440px; */
     margin-top: 94px;
+    width: 1184px;
+}
+.feature-three-a{
+    width: 100%;
 }
 .feature-three-b{
     margin-top: 147px;
 }
 .feature-four-b .img-six, .wrapper-three .img-ten{
-    width: 695.02px;
-    left: 582px;
+    /* width: 695.02px; */
+    /* left: 582px; */
+    width: 684px;
+    left: 572px;
 }
 .four-content, .main-wrapper{
     right: 632px;
@@ -3349,57 +3348,154 @@ left: 28px;
 .ex-one{
     margin-top: -1px;
 }
+.feature-four{
+    margin-left: -112px;
+}
+ .containerr-a .img-eight{
+    width: 552px;
+    height: 552px;
+ }
+ .containerr-one{
+    height: 804px;
+    padding-left: 0px;
+ }
+ .containerr-b{
+    width: 552px;
+    bottom: -208px;
+    left: -10px;
+ }
+ .flowers,.pets{
+    width: 100%;
+    left: 40px;
+ }
+ .flowers h2,.pets h2{
+    width: auto;
+    left: 6.5px;
+ }
+ .flower{
+    left: 20px;
+ }
+ .pet{
+    left: 6px;
+ }
+ .pets .con-beauty{
+    width: 100%;
+    margin-left: -21px;
+ }
+ .pets .con-one{
+  right: 21px;
+ }
+ .wrapper-two{
+    margin-left: -112px;
+ }
+ .main-wrapper{
+    left: -632px;
+ }
+ .wrapper-four .img-twelve {
+    width: 684px;
+}
+.class-two{
+    width: 1130px;
+    height: 272px;
+}
+.class-one h2{
+    padding-left: 181px;
+}
+.footer-four h2{
+    left: -490px;
+}
+.bottom-one{
+    width: 560px;
+}
+.footer-img{
+    left: 480px;
+}
+}
+@media  screen and (min-width: 1440px) {
+    .bdy{
+        overflow: hidden;
+        position:relative ;
+        z-index: 0;
+    }  
+    .banner{
+        background-position: center center;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .container{
+        max-width: 1184px;
+}
+.feature-one{
+    margin-left: -1px;
+}
+.feature-one-a .img-two{
+   width: 695.02px; 
+}
+.feature-main{
+    margin-left: -278px;
+}
+.feature-img .img-four{
+    width: 724px;
+}
+.feature-four-b .img-six{
+    width: 695.02px;
+    left: 582px;
+}
+.four-content{
+    right: 633px;
+}
+.feature-three{
+    width: 1440px;
+}
+.feature-four{
+    margin-left: 0px;
+}
 .containerr{
     max-width: 1440px;
     height:1668px;
     padding-bottom: 100px;
     margin-bottom: -21px;
-    /* max-width: 100%; */
+    max-width: 100%;
 }
-/* .feature-one-a .img-two-cotainerr-a .img-eight{
-    width: 552px;
-    height: 552px;
-} */
+ .containerr-a .img-eight{
+ left: -40.9px;
+}
 .flower,.pet{
-    left: -96px;
+    /* left: -149.9px; */
+       left: -95.5px;
 }
-.pet{
-    left: -109px;
-}
+/* .pet{
+    left: -150px;
+} */
 .flowers,.pets{
-    position: relative;
+    /* left: -129px */
     left: -75px;
-    width: 100%;
 }
 .containerr-one{
     width: 592px;
     height: 804px;
-    padding-left: 114px
+    /* padding-left: 209.5px */
+    padding-left: 155.5px;
 }
 .containerr-b{
-bottom: -208px;
-left: -17px;
-width: 100%;
-height: 212px;
+left: -37px;
 }
 .containerr-b h2{
-    width: 496.8px;
-    left: 24px;
+    left: 7px;
 }
 .con-beauty{
     width: 552px;
 }
 .pets .con-beauty {
-        width: 552px;
         position: relative;
-        left: 17px;
+        left: 0px;
     }
     .pets .con-one{
         right: 21px;
     }
 .main-wrapper{
    position: relative;
-   left: -734px;
+   left: -621.5px;
    top: -54px;
 }
 .wrapper-four  .img-twelve{
@@ -3414,6 +3510,8 @@ height: 212px;
 }
 .wrapper-three .img-ten{
     top: -68px;
+    width: 695.02px;
+    left: 694px;
 }
 .class{
     width: 100%;
@@ -3457,7 +3555,42 @@ right: 500px;
 }
 .bottom-two{
     margin-right: -69px;
+} 
 }
+@media screen and (min-width: 1559px) {
+    .feature-one{
+        margin-left: 59px;
+    }
+    .feature-three{
+     width: 1559px;
+    }
+    .feature-four{
+        margin-left: 60px;
+    }
+    .containerr{
+        max-width: 1559px;
+    }
+    .containerr-one{
+        padding-left: 209.5px;
+    }
+    .flower,.pet{
+        left: -149.9px;
+    }
+    .containerr-b{
+        left: -40px;
+    }
+    .flowers, .pets{
+        left: -129px;
+    }
+    .wrapper-three{
+        margin-left: 60px;
+    }
+    .main-wrapper{
+        left: -669px;
+    }
+    .bottom-one{
+        width: 491px;
+    }
 }
 @media screen and (min-width: 2560px){
     .feature{
@@ -3466,11 +3599,10 @@ right: 500px;
         padding-bottom:20px ;
     }
     .feature-one-a .img-two,.feature-four-b img{
-        left: 1122px;
+        left: 955px;
     }
     .feature-main{
-        top: -111px;
-        left: 683px;
+        left: 18px;
     }
     .feature-three{
         width: 2834px;
@@ -3496,6 +3628,9 @@ right: 500px;
          top: -104px;
         left: 1143px;
 }
+.feature-four{
+    margin-left: 0px;
+}
 .four-content{
     left: -73px;
     top: -147px;
@@ -3513,15 +3648,12 @@ right: 500px;
     height: 1630px;
 }
 .containerr-one{
-    width: 592px;
     position: relative;
-    left:18.2%;
-    top: 0px;
-    column-gap: 0px;
+    left:410px;
     margin-bottom: -20px;
 }
 .containerr-b{
-    left: -297px;
+    left: -290px;
 }
 .flower,.pet{
     position: relative;
@@ -3536,26 +3668,17 @@ right: 500px;
     margin-left: -732px;
 }
 .pet img{
-    margin-left: -30px;
+    margin-left: -16px;
 }
 .flowers,.pets{
     left: -795px;
     margin-top: -49px;
 }
-.flowers h2{
-    left: 304px;
-}
-.pets{
-    left: -515px;
-}
-.pets .con-one{
-   right: 300px;
-}
   .wrapper-two{
-        width: 2560px;
+        margin-left: 0px;
      }
      .wrapper-three .img-ten{
-        left: 1142px;
+        left: 1082px;
         top: -105px;
      }
 .flower-img{
